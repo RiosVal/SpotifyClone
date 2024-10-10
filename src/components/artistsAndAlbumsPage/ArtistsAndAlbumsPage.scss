@@ -7,10 +7,33 @@
     border-radius: 15px;
     padding: 2px 15px;
     margin-top: 10px;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+        background: $background-black;
+        width: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: $background-grey-lighter;
+    }
 }
 
 .artists-container {
+    h2 {
+        margin-bottom: 0;
+    }
     .artists-page-components-container {
+        display: flex;
+        gap: 8px;
+    }
+}
+
+.playlists-container {
+    h2 {
+        margin-bottom: 0;
+    }
+    .playlist-page-components-container {
         display: flex;
         gap: 8px;
     }

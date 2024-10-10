@@ -366,3 +366,61 @@ export const SONGS_BY_ARTIST = [
     ]
   }
 ];
+
+export const PLAYLISTS = [
+  {
+    playlistName: 'Mix',
+    playlistPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2730d4e3d8e124aa7c39d5efa79',
+    playlistSongs: [
+      SONGS_BY_ARTIST[0].songs[0],
+      SONGS_BY_ARTIST[1].songs[0],
+      SONGS_BY_ARTIST[2].songs[0],
+      SONGS_BY_ARTIST[3].songs[0],
+      SONGS_BY_ARTIST[4].songs[0],
+    ]
+  },
+  {
+    playlistName: 'R&B Essentials',
+    playlistPhotoURL: 'https://i.scdn.co/image/ab67616d00001e02c219ac2e679a030f2d8a5026',
+    playlistSongs: [
+      SONGS_BY_ARTIST[3].songs[2],
+      SONGS_BY_ARTIST[3].songs[4],
+      SONGS_BY_ARTIST[8].songs[1],
+      SONGS_BY_ARTIST[8].songs[0],
+      SONGS_BY_ARTIST[3].songs[3],
+    ]
+  },
+  {
+    playlistName: 'Rock Essentials',
+    playlistPhotoURL: 'https://i.scdn.co/image/ab67616d00001e0235eeb40f2fa70b35d9c48ece',
+    playlistSongs: [
+      SONGS_BY_ARTIST[2].songs[2],
+      SONGS_BY_ARTIST[7].songs[4],
+      SONGS_BY_ARTIST[7].songs[1],
+      SONGS_BY_ARTIST[2].songs[0],
+      SONGS_BY_ARTIST[2].songs[3],
+    ]
+  },
+  {
+    playlistName: 'Regueton Party',
+    playlistPhotoURL: 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da845026f2c406bea5aad263913e',
+    playlistSongs: [
+      SONGS_BY_ARTIST[0].songs[2],
+      SONGS_BY_ARTIST[6].songs[4],
+      SONGS_BY_ARTIST[6].songs[1],
+      SONGS_BY_ARTIST[6].songs[0],
+      SONGS_BY_ARTIST[0].songs[3],
+    ]
+  },
+  {
+    playlistName: 'Vallenato Love',
+    playlistPhotoURL: 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84c1785590948dff132e5d6888',
+    playlistSongs: [
+      SONGS_BY_ARTIST[4].songs[2],
+      SONGS_BY_ARTIST[9].songs[4],
+      SONGS_BY_ARTIST[4].songs[1],
+      SONGS_BY_ARTIST[6].songs[0],
+      SONGS_BY_ARTIST[9].songs[3],
+    ]
+  },
+]

@@ -1,6 +1,7 @@
 import React from "react";
 import { ArtistComponent } from "../artistComponent/ArtistComponent";
-import { SONGS_BY_ARTIST } from "../../../utils/accountUtils";
+import { PlaylistComponent } from "../playlistComponent/PlaylistComponent";
+import { SONGS_BY_ARTIST, PLAYLISTS } from "../../../utils/accountUtils";
 import "./ArtistsAndAlbumsPage.scss";
 
 export function ArtistsAndAlbumsPage() {
@@ -15,7 +16,15 @@ export function ArtistsAndAlbumsPage() {
                 </div> 
             </div>
 
-            <div className="albums-container"></div>
+            <div className="playlists-container">
+                <h2>Playlists</h2>
+                <div className="playlists-page-components-container">
+                    {PLAYLISTS.map(playlist => (
+                        <PlaylistComponent playlistName={playlist.playlistName} 
+                                           playlistPhotoURL={playlist.playlistPhotoURL} />
+                    ))}
+                </div>
+            </div>
         </div>
     );
 }
