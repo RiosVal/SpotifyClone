@@ -1,14 +1,10 @@
-@import '../../colorVariables.scss';
+@import "../../colorVariables.scss";
 
-.sidebar-container {
+.artists-albums-page-container {
     background-color: $background-grey;
-    width: 32%;
+    width: 62%;
     height: 85vh;
     border-radius: 15px;
     padding: 2px 15px;
     margin-top: 10px;
-
-    h1 {
-        font-weight: 525;
-    }
 }

@@ -2,8 +2,9 @@ import { useEffect, useState } from 'react';
 import { getAccessToken } from '../utils/accountUtils';
 import { Header } from './components/header/Header';
 import { MenuSidebar } from './components/menuSidebar/MenuSidebar';
+import { ArtistsAndAlbumsPage } from './components/artistsAndAlbumsPage/ArtistsAndAlbumsPage';
 
-import './App.css'
+import './App.scss'
 
 function App() {
   const [profile, setProfile] = useState(null);
@@ -30,8 +31,9 @@ function App() {
   return (
     <>
       <Header />
-      <div>
+      <div className='content-section'>
         <MenuSidebar />
+        <ArtistsAndAlbumsPage />
       </div>
     </>
   )
