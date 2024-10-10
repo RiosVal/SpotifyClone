@@ -1,0 +1,14 @@
+@import '../../colorVariables.scss';
+
+.sidebar-container {
+    background-color: $background-grey;
+    width: 32%;
+    height: 85vh;
+    border-radius: 15px;
+    padding: 2px 15px;
+    margin-top: 10PX;
+
+    h1 {
+        font-weight: 525;
+    }
+}

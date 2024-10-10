@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { getAccessToken } from '../utils/accountUtils';
 import { Header } from './components/header/Header';
+import { MenuSidebar } from './components/menuSidebar/MenuSidebar';
 
 import './App.css'
 
@@ -29,6 +30,9 @@ function App() {
   return (
     <>
       <Header />
+      <div>
+        <MenuSidebar />
+      </div>
     </>
   )
 }

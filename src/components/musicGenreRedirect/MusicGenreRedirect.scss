@@ -1,0 +1,21 @@
+@import "../../colorVariables.scss";
+
+.genre-redirect-container {
+    background-color: $background-grey-lighter;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 15px;
+
+    a {
+        color: $font-white;
+        text-decoration: none;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: $hover-background-grey-lighter;
+        a {
+            font-weight: 600;
+        }
+    }
+}
