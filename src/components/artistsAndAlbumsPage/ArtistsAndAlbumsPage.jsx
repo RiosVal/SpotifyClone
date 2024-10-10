@@ -1,4 +1,5 @@
 import React from "react";
+import { AppContentContainer } from "../appContentContainer/AppContentContainer";
 import { ArtistComponent } from "../artistComponent/ArtistComponent";
 import { PlaylistComponent } from "../playlistComponent/PlaylistComponent";
 import { SONGS_BY_ARTIST, PLAYLISTS } from "../../../utils/accountUtils";
@@ -6,7 +7,7 @@ import "./ArtistsAndAlbumsPage.scss";
 
 export function ArtistsAndAlbumsPage() {
     return(
-        <div className="artists-albums-page-container">
+        <AppContentContainer>
             <div className="artists-container">
                 <h2>Artistas</h2>
                 <div className="artists-page-components-container">
@@ -25,6 +26,6 @@ export function ArtistsAndAlbumsPage() {
                     ))}
                 </div>
             </div>
-        </div>
+        </AppContentContainer>
     );
 }
