@@ -1,10 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./MusicGenreRedirect.scss";
 
 export function MusicGenreRedirect({ musicGenre, href }) {
     return(
         <div className="genre-redirect-container">
-            <a href={href}>{musicGenre}</a>
+            <Link to={href}>{musicGenre}</Link>
         </div>
     );
 }

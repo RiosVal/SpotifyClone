@@ -6,11 +6,11 @@ export function MenuSidebar() {
     return(
         <div className="sidebar-container">
             <h1>Menu</h1>
-            <MusicGenreRedirect musicGenre={"Rock"}/>
-            <MusicGenreRedirect musicGenre={"Regueton"}/>
-            <MusicGenreRedirect musicGenre={"R&B"}/>
-            <MusicGenreRedirect musicGenre={"Vallenato"}/>
-            <MusicGenreRedirect musicGenre={"Pop"}/>
+            <MusicGenreRedirect href={"/music-genre/rock"} musicGenre={"Rock"}/>
+            <MusicGenreRedirect href={"/music-genre/regueton"} musicGenre={"Regueton"}/>
+            <MusicGenreRedirect href={"/music-genre/r&b"} musicGenre={"R&B"}/>
+            <MusicGenreRedirect href={"/music-genre/vallenato"} musicGenre={"Vallenato"}/>
+            <MusicGenreRedirect href={"/music-genre/pop"} musicGenre={"Pop"}/>
         </div>
     );
 }

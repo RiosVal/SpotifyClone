@@ -11,7 +11,7 @@ export function Header() {
         <div className="header-container">
             <FontAwesomeIcon icon={faSpotify} className="spotify-icon" />
             <div className="searching-container">
-                <RedirectButton propIcon={faHome}/>
+                <RedirectButton href={"/"} propIcon={faHome}/>
                 <Searchbar />
             </div>
             <div className="account-loggin-container">

@@ -1,3 +1,7 @@
+import { BrowserRouter as Router,
+  Routes,
+  Route
+} from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { getAccessToken } from '../utils/accountUtils';
 import { Header } from './components/header/Header';
@@ -29,13 +33,17 @@ function App() {
   }, []);  // Ejecutar al montar el componente
 
   return (
-    <>
-      <Header />
-      <div className='content-section'>
-        <MenuSidebar />
-        <ArtistsAndAlbumsPage />
-      </div>
-    </>
+    <Router>
+      <>
+        <Header />
+        <div className='content-section'>
+          <MenuSidebar />
+          <Routes>
+            <Route path='/' element={<ArtistsAndAlbumsPage />} />
+          </Routes>
+        </div>
+      </>
+    </Router>
   )
 }
 

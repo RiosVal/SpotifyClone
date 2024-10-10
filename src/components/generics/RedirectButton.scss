@@ -3,26 +3,31 @@
 .redirect-button {
     padding: 10px;
     height: 50px;
+    width: 50px;
     border: none;
 
     &.with-icon {
-        width: 50px;
         border-radius: 50%;
         background-color: $background-grey;
-        color: $font-grey;
         font-size: 17px;
 
         &:hover {
             cursor: pointer;
             background-color: $hover-background-grey;
         }
+
+        svg {
+            color: $font-grey;
+        }
     }
 
     &.with-label {
-        width: 50px;
         border-radius: 10px;
         background-color: white;
-        color: $background-black;
         font-weight: 600;
+
+        p {
+            color: $background-black;
+        }
     }
 }
