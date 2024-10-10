@@ -8,3 +8,10 @@
     padding: 2px 15px;
     margin-top: 10px;
 }
+
+.artists-container {
+    .artists-page-components-container {
+        display: flex;
+        gap: 8px;
+    }
+}

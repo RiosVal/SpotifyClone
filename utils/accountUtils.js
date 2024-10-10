@@ -34,8 +34,9 @@ const musicGenresMap = {
   vallenato: 'Vallenato'
 }
 
-const songsByArtist = [
+export const SONGS_BY_ARTIST = [
   {
+    id: 1,
     artistName: 'Feid',
     photoURL: 'https://i.scdn.co/image/ab67616100005174e82c62cc8cf019aecfd71ee8',
     genre: musicGenresMap.regueton,
@@ -68,6 +69,7 @@ const songsByArtist = [
     ]
   },
   {
+    id: 2,
     artistName: 'Lady Gaga',
     photoURL: 'https://i.scdn.co/image/ab67616d0000b2738093238ec0c71ef7c95c8fb1',
     genre: musicGenresMap.pop,
@@ -100,6 +102,7 @@ const songsByArtist = [
     ]
   },
   {
+    id: 3,
     artistName: 'Aerosmith',
     photoURL: 'https://i.scdn.co/image/ab67616d0000b273a7af122cd50575f63a156586',
     genre: musicGenresMap.rock,
@@ -132,6 +135,7 @@ const songsByArtist = [
     ]
   },
   {
+    id: 4,
     artistName: 'Alicia Keys',
     photoURL: 'https://i.scdn.co/image/ab67616d00001e02a210590ab32a6d17777b0bf9',
     genre: musicGenresMap.rAndB,
@@ -164,6 +168,7 @@ const songsByArtist = [
     ]
   },
   {
+    id: 5,
     artistName: 'Silvestre Dangond',
     photoURL: 'https://i.scdn.co/image/ab67616d0000b273354859da6a81577724fa0a2f',
     genre: musicGenresMap.vallenato,
@@ -196,6 +201,7 @@ const songsByArtist = [
     ]
   },
   {
+    id: 6,
     artistName: 'Michael Jackson',
     photoURL: 'https://i.scdn.co/image/ab67616d0000b273de437d960dda1ac0a3586d97',
     genre: musicGenresMap.pop,
@@ -228,6 +234,7 @@ const songsByArtist = [
     ]
   },
   {
+    id: 7,
     artistName: 'Karol G',
     photoURL: 'https://i.scdn.co/image/ab6761610000e5eb4b0754aefc9db490e02205ec',
     genre: musicGenresMap.regueton,
@@ -260,6 +267,7 @@ const songsByArtist = [
     ]
   },
   {
+    id: 8,
     artistName: 'Metallica',
     photoURL: 'https://thisis-images.spotifycdn.com/37i9dQZF1DZ06evO1sJmec-default.jpg',
     genre: musicGenresMap.rock,
@@ -292,6 +300,7 @@ const songsByArtist = [
     ]
   },
   {
+    id: 9,
     artistName: 'Whitney Houston',
     photoURL: 'src="https://i.scdn.co/image/ab6761610000e5ebcd9f60ab57585bf3b77ecc51"',
     genre: musicGenresMap.rAndB,
@@ -324,6 +333,7 @@ const songsByArtist = [
     ]
   },
   {
+    id: 10,
     artistName: 'Binomio de Oro',
     photoURL: 'https://i.scdn.co/image/ab6761610000e5eb813e7b32f71bf7229db29e1b',
     genre: musicGenresMap.vallenato,

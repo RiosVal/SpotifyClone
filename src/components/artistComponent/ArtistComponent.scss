@@ -1,0 +1,36 @@
+@import "../../colorVariables.scss";
+@import "../../index.scss";
+
+button {
+    background: transparent;
+    border: none;
+    border-radius: 15px;
+    padding: 0 10px;
+    height: 230px;
+    font-family: $montserrat-font;
+    color: $font-white;
+    .artist-img {
+        width: 130px;
+        height: 130px;
+        border-radius: 50%;
+    }
+    .artist-info {
+        margin-top: 5px;
+        .artist-name {
+            font-size: 15px;
+        }
+        .artist-label{
+            color: $font-grey;
+            margin-top: 5px;
+        }
+        p {
+            margin: 0;
+            text-align: left;
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+        background: linear-gradient($background-grey, $background-grey-lighter);
+    }
+}
