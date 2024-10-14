@@ -7,11 +7,7 @@ import { getAccessToken } from '../utils/accountUtils';
 import { Header } from './components/header/Header';
 import { MenuSidebar } from './components/menuSidebar/MenuSidebar';
 import { ArtistsAndAlbumsPage } from './components/artistsAndAlbumsPage/ArtistsAndAlbumsPage';
-import { RockGenrePage } from './components/rockGenrePage/RockGenrePage';
-import { ReguetonGenrePage } from './components/reguetonGenrePage/ReguetonGenrePage'
-import { RbGenrePage } from './components/rAndBGenrePage/RbGenrePage';
-import { VallenatoGenrePage } from './components/vallenatoGenrePage/VallenatoGenrePage';
-import { PopGenrePage } from './components/popGenrePage/PopGenrePage';
+import { MusicGenrePage } from './components/musicGenrePage/MusicGenrePage';
 
 import './App.scss'
 
@@ -45,11 +41,11 @@ function App() {
           <MenuSidebar />
           <Routes>
             <Route path='/' element={<ArtistsAndAlbumsPage />} />
-            <Route path='/music-genre/rock' element={<RockGenrePage />} />
-            <Route path='/music-genre/regueton' element={<ReguetonGenrePage />} />
-            <Route path='/music-genre/r&b' element={<RbGenrePage />} />
-            <Route path='/music-genre/vallenato' element={<VallenatoGenrePage />} />
-            <Route path='/music-genre/pop' element={<PopGenrePage />} />
+            <Route path='/music-genre/rock' element={<MusicGenrePage genre={'Rock'} />} />
+            <Route path='/music-genre/regueton' element={<MusicGenrePage genre={'Regueton'} />} />
+            <Route path='/music-genre/r&b' element={<MusicGenrePage genre={'R&B'} />} />
+            <Route path='/music-genre/vallenato' element={<MusicGenrePage genre={'Vallenato'} />} />
+            <Route path='/music-genre/pop' element={<MusicGenrePage genre={'Pop'} />} />
           </Routes>
         </div>
       </>

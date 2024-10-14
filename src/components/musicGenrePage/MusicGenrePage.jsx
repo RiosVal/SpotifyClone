@@ -2,10 +2,11 @@ import React from "react";
 import { AppContentContainer } from '../appContentContainer/AppContentContainer';
 
 export function MusicGenrePage(props) {
-    const {pageTitle} = props;
+    const {genre} = props;
+
     return(
         <AppContentContainer>
-            <h2>{pageTitle}</h2>
+            <h2>{genre}</h2>
         </AppContentContainer>
     );
 }
