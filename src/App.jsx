@@ -8,6 +8,7 @@ import { Header } from './components/header/Header';
 import { MenuSidebar } from './components/menuSidebar/MenuSidebar';
 import { ArtistsAndAlbumsPage } from './components/artistsAndAlbumsPage/ArtistsAndAlbumsPage';
 import { MusicGenrePage } from './components/musicGenrePage/MusicGenrePage';
+import { musicGenresMap, GENRES_PHOTOS_URL, filterByMusicGenre } from '../utils/accountUtils';
 
 import './App.scss'
 
@@ -33,6 +34,28 @@ function App() {
     fetchSpotifyProfile();
   }, []);  // Ejecutar al montar el componente
 
+  const rockSongs = {
+    songList: filterByMusicGenre(musicGenresMap.rock),
+    coverPhotoURL: GENRES_PHOTOS_URL.rock
+  };
+  const reguetonSongs = {
+    songList: filterByMusicGenre(musicGenresMap.regueton),
+    coverPhotoURL: GENRES_PHOTOS_URL.regueton
+  };
+  const rAndBSongs = {
+    songList: filterByMusicGenre(musicGenresMap.rAndB),
+    coverPhotoURL: GENRES_PHOTOS_URL.rAndB
+  };
+  const vallenatoSongs = {
+    songList: filterByMusicGenre(musicGenresMap.vallenato),
+    coverPhotoURL: GENRES_PHOTOS_URL.vallenato
+  };
+  const popSongs = {
+    songList: filterByMusicGenre(musicGenresMap.pop),
+    coverPhotoURL: GENRES_PHOTOS_URL.pop
+  };
+
+
   return (
     <Router>
       <>
@@ -40,12 +63,24 @@ function App() {
         <div className='content-section'>
           <MenuSidebar />
           <Routes>
-            <Route path='/' element={<ArtistsAndAlbumsPage />} />
-            <Route path='/music-genre/rock' element={<MusicGenrePage genre={'Rock'} />} />
-            <Route path='/music-genre/regueton' element={<MusicGenrePage genre={'Regueton'} />} />
-            <Route path='/music-genre/r&b' element={<MusicGenrePage genre={'R&B'} />} />
-            <Route path='/music-genre/vallenato' element={<MusicGenrePage genre={'Vallenato'} />} />
-            <Route path='/music-genre/pop' element={<MusicGenrePage genre={'Pop'} />} />
+            <Route 
+              path='/' 
+              element={<ArtistsAndAlbumsPage />} />
+            <Route 
+              path='/music-genre/rock' 
+              element={<MusicGenrePage genre={'Rock'} songs={rockSongs.songList} coverPhoto={GENRES_PHOTOS_URL.rock} />} />
+            <Route 
+              path='/music-genre/regueton' 
+              element={<MusicGenrePage genre={'Regueton'} songs={reguetonSongs.songList} coverPhoto={reguetonSongs.coverPhotoURL} />} />
+            <Route 
+              path='/music-genre/r&b' 
+              element={<MusicGenrePage genre={'R&B'} songs={rAndBSongs.songList} coverPhoto={rAndBSongs.coverPhotoURL} />} />
+            <Route 
+              path='/music-genre/vallenato' 
+              element={<MusicGenrePage genre={'Vallenato'} songs={vallenatoSongs.songList} coverPhoto={vallenatoSongs.coverPhotoURL} />} />
+            <Route 
+              path='/music-genre/pop' 
+              element={<MusicGenrePage genre={'Pop'} songs={popSongs.songList} coverPhoto={popSongs.coverPhotoURL} />} />
           </Routes>
         </div>
       </>

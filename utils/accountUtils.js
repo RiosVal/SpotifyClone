@@ -34,6 +34,14 @@ export const getAccessToken = async () => {
   vallenato: 'Vallenato'
 }
 
+export const GENRES_PHOTOS_URL = {
+  rock: 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da840774a242a12ead585708fa16',
+  pop: 'https://i.scdn.co/image/ab67616d0000b273d48b3ca7ced155aa46324088',
+  regueton: 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84de893c4d8772ed9630ba31e3',
+  rAndB: 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84cda10d38cbb1fdf978c9a6ca',
+  vallenato: 'https://i.scdn.co/image/ab67706f00000002c055a8784448dd140a5682bc'
+}
+
 export const ARTISTS = [
   {id: 1,
     artistName: 'Feid',
