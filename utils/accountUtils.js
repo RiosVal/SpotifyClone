@@ -94,6 +94,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273f1aad814a40ec7419c234242',
     videoURL: 'https://www.youtube.com/watch?v=ZA7ZKB8Mo9k',
     isFavSong: false,
+    genre: musicGenresMap.regueton,
     artistId: 1
   },
   {
@@ -102,6 +103,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273edd9fbb8df345ace64a558d7',
     videoURL: 'https://www.youtube.com/watch?v=ROgcM9-N9jM',
     isFavSong: true,
+    genre: musicGenresMap.regueton,
     artistId: 1
   },
   {
@@ -109,7 +111,9 @@ export const SONGS = [
     songName: 'PERRO NEGRO',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d00001e027cc7b0d6a82846cd8b158f99',
     videoURL: 'https://www.youtube.com/watch?v=a6tgD_CsYTQ',
-    isFavSong: true
+    isFavSong: true,
+    genre: musicGenresMap.regueton,
+    artistId: 1
   },
   {
     id: 4,
@@ -117,6 +121,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273746cdeef8d4a4110f1b5af29',
     videoURL: 'https://www.youtube.com/watch?v=Q2ftMmazZCU',
     isFavSong: true,
+    genre: musicGenresMap.regueton,
     artistId: 1
   },
   {
@@ -125,6 +130,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273aac05e76abbf5a43d5705766',
     videoURL: 'https://www.youtube.com/watch?v=wPGn8iqoyGY',
     isFavSong: false,
+    genre: musicGenresMap.regueton,
     artistId: 1
   },
   {
@@ -133,6 +139,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273aeb64471596b00f380975ceb',
     videoURL: 'https://www.youtube.com/watch?v=qrO4YZeyl0I',
     isFavSong: true,
+    genre: musicGenresMap.pop,
     artistId: 2
   },
   {
@@ -141,6 +148,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2739ce7475919b19845b22e5208',
     videoURL: 'https://www.youtube.com/watch?v=wagn8Wrmzuc',
     isFavSong: true,
+    genre: musicGenresMap.pop,
     artistId: 2
   },
   {
@@ -149,6 +157,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273d2a19aba02f7aff26536ea25',
     videoURL: 'https://www.youtube.com/watch?v=bESGLojNYSo',
     isFavSong: false,
+    genre: musicGenresMap.pop,
     artistId: 2
   },
   {
@@ -157,6 +166,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2736382b06979658a68dd868b92',
     videoURL: 'https://www.youtube.com/watch?v=WYRJ-ryPEu0',
     isFavSong: false,
+    genre: musicGenresMap.pop,
     artistId: 2
   },
   {
@@ -165,6 +175,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b27316c0b30e86629c390c113445',
     videoURL: 'https://www.youtube.com/watch?v=niqrrmev4mA',
     isFavSong: false,
+    genre: musicGenresMap.pop,
     artistId: 2
   },
   {
@@ -173,6 +184,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273f039d2a6afcfab0827bb9bc0',
     videoURL: 'https://www.youtube.com/watch?v=JkK8g6FMEXE',
     isFavSong: true,
+    genre: musicGenresMap.rock,
     artistId: 3
   },
   {
@@ -181,6 +193,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273b11078ee23dcd99e085ac33e',
     videoURL: 'https://www.youtube.com/watch?v=89dGC8de0CA',
     isFavSong: true,
+    genre: musicGenresMap.rock,
     artistId: 3
   },
   {
@@ -189,6 +202,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b27391b246743456e285a20a46ed',
     videoURL: 'https://www.youtube.com/watch?v=NMNgbISmF4I',
     isFavSong: false,
+    genre: musicGenresMap.rock,
     artistId: 3
   },
   {
@@ -197,6 +211,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2736b31fc428270797b96360034',
     videoURL: 'https://www.youtube.com/watch?v=zSmOvYzSeaQ',
     isFavSong: false,
+    genre: musicGenresMap.rock,
     artistId: 3
   },
   {
@@ -205,6 +220,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273a8a965df6a845b265ee19106',
     videoURL: 'https://www.youtube.com/watch?v=mrEC8xGc3ZM',
     isFavSong: true,
+    genre: musicGenresMap.rock,
     artistId: 3
   },
   {
@@ -213,6 +229,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b27390c89f2c0d8cc19558132295',
     videoURL: 'https://www.youtube.com/watch?v=vk6014HuxcE',
     isFavSong: false,
+    genre: musicGenresMap.rAndB,
     artistId: 4
   },
   {
@@ -221,6 +238,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b27373b720e9f078763d33df52e8',
     videoURL: 'https://www.youtube.com/watch?v=rywUS-ohqeE',
     isFavSong: true,
+    genre: musicGenresMap.rAndB,
     artistId: 4
   },
   {
@@ -229,6 +247,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273d56795a6058be632e01982e8',
     videoURL: 'https://www.youtube.com/watch?v=J91ti_MpdHA',
     isFavSong: false,
+    genre: musicGenresMap.rAndB,
     artistId: 4
   },
   {
@@ -236,7 +255,9 @@ export const SONGS = [
     songName: 'Superwoman',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273c7e7390eb92b5c540ca3d06e',
     videoURL: 'https://www.youtube.com/watch?v=-AphKUK8twg',
-    isFavSong: true
+    isFavSong: true,
+    genre: musicGenresMap.rAndB,
+    artistId: 4
   },
   {
     id: 20,
@@ -244,6 +265,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2736d684b553a40e4a11e1db96d',
     videoURL: 'https://www.youtube.com/watch?v=Urdlvw0SSEc',
     isFavSong: true,
+    genre: musicGenresMap.rAndB,
     artistId: 4
   },
   {
@@ -252,6 +274,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2735c37183a6df48c0b426f966a',
     videoURL: 'https://www.youtube.com/watch?v=HL_NrQsUSsA',
     isFavSong: true,
+    genre: musicGenresMap.vallenato,
     artistId: 5
   },
   {
@@ -260,6 +283,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273408b5314c4bcf53dfc51e6a8',
     videoURL: 'https://www.youtube.com/watch?v=BIbonPyTuHQ',
     isFavSong: true,
+    genre: musicGenresMap.vallenato,
     artistId: 5
   },
   {
@@ -268,6 +292,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273ceee4f46d31f91dce77c6f48',
     videoURL: 'https://www.youtube.com/watch?v=94bCNMghYrg',
     isFavSong: true,
+    genre: musicGenresMap.vallenato,
     artistId: 5
   },
   {
@@ -276,6 +301,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b27355c5d0401ed29f01b672eb14',
     videoURL: 'https://www.youtube.com/watch?v=8YmplZWFIMM',
     isFavSong: false,
+    genre: musicGenresMap.vallenato,
     artistId: 5
   },
   {
@@ -284,6 +310,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273b86046432a91dcc31214f9c7',
     videoURL: 'https://www.youtube.com/watch?v=53ZE7CVRh5I',
     isFavSong: false,
+    genre: musicGenresMap.vallenato,
     artistId: 5
   },
   {
@@ -292,6 +319,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2739eb690cb054df293fe7711b8',
     videoURL: 'https://www.youtube.com/watch?v=Zi_XLOBDo_Y',
     isFavSong: true,
+    genre: musicGenresMap.pop,
     artistId: 6
   },
   {
@@ -300,6 +328,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2734121faee8df82c526cbab2be',
     videoURL: 'https://www.youtube.com/watch?v=sOnqjkJTMaA',
     isFavSong: false,
+    genre: musicGenresMap.pop,
     artistId: 6
   },
   {
@@ -308,6 +337,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273d0593178c6c2594693ee34b7',
     videoURL: 'https://www.youtube.com/watch?v=XAi3VTSdTxU',
     isFavSong: true,
+    genre: musicGenresMap.pop,
     artistId: 6
   },
   {
@@ -316,6 +346,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2733b9f8b18cc685e1502128aa8',
     videoURL: 'https://www.youtube.com/watch?v=LeiFF0gvqcc',
     isFavSong: true,
+    genre: musicGenresMap.pop,
     artistId: 6
   },
   {
@@ -324,6 +355,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2731bb21d27effb96a1d0fe8d6d',
     videoURL: 'https://www.youtube.com/watch?v=h_D3VFfhvs4',
     isFavSong: true,
+    genre: musicGenresMap.pop,
     artistId: 6
   },
   {
@@ -332,6 +364,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273c2e05d426c037a71556c9f14',
     videoURL: 'https://www.youtube.com/watch?v=cU_ndnP4f2s',
     isFavSong: false,
+    genre: musicGenresMap.regueton,
     artistId: 7
   },
   {
@@ -340,6 +373,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b27382de1ca074ae63cb18fce335',
     videoURL: 'https://www.youtube.com/watch?v=VOucMiGOBqg',
     isFavSong: false,
+    genre: musicGenresMap.regueton,
     artistId: 7
   },
   {
@@ -348,6 +382,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2738bf08f626df56fffc04b94c6',
     videoURL: 'https://www.youtube.com/watch?v=mL3iLaYbZqk',
     isFavSong: true,
+    genre: musicGenresMap.regueton,
     artistId: 7
   },
   {
@@ -356,6 +391,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273ae28c8f2748587cc2a33d6c2',
     videoURL: 'https://www.youtube.com/watch?v=QaXhVryxVBk',
     isFavSong: false,
+    genre: musicGenresMap.regueton,
     artistId: 7
   },
   {
@@ -364,6 +400,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273e70c454b8989f09d1e11ea92',
     videoURL: 'https://www.youtube.com/watch?v=ca48oMV59LU',
     isFavSong: true,
+    genre: musicGenresMap.regueton,
     artistId: 7
   },
   {
@@ -372,6 +409,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273cf84c5b276431b473e924802',
     videoURL: 'https://www.youtube.com/watch?v=tAGnKpE4NCI',
     isFavSong: true,
+    genre: musicGenresMap.rock,
     artistId: 8
   },
   {
@@ -380,6 +418,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2736976009675621c80cafa1ff5',
     videoURL: 'https://www.youtube.com/watch?v=E0ozmU9cJDg',
     isFavSong: false,
+    genre: musicGenresMap.rock,
     artistId: 8
   },
   {
@@ -388,6 +427,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2737c05e69390ab7c628a83cee7',
     videoURL: 'https://www.youtube.com/watch?v=WM8bTdBs-cw',
     isFavSong: true,
+    genre: musicGenresMap.rock,
     artistId: 8
   },
   {
@@ -396,6 +436,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2737e1f85f69323acac962516c4',
     videoURL: 'https://www.youtube.com/watch?v=wsrvmNtWU4E',
     isFavSong: false,
+    genre: musicGenresMap.rock,
     artistId: 8
   },
   {
@@ -404,6 +445,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273af07dc851962508661bbcfce',
     videoURL: 'https://www.youtube.com/watch?v=domjqjQ_WRI',
     isFavSong: true,
+    genre: musicGenresMap.rock,
     artistId: 8
   },
   {
@@ -412,6 +454,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273456c0b5d0316a80dc600802e',
     videoURL: 'https://www.youtube.com/watch?v=3JWTaaS7LdU',
     isFavSong: true,
+    genre: musicGenresMap.rAndB,
     artistId: 9
   },
   {
@@ -420,6 +463,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273610c796bc53cec9b9932a269',
     videoURL: 'https://www.youtube.com/watch?v=FxYw0XPEoKE',
     isFavSong: true,
+    genre: musicGenresMap.rAndB,
     artistId: 9
   },
   {
@@ -428,6 +472,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d00001e02cc57e9b00b87dd0f6e868347',
     videoURL: 'https://www.youtube.com/watch?v=eH3giaIzONA',
     isFavSong: true,
+    genre: musicGenresMap.rAndB,
     artistId: 9
   },
   {
@@ -436,6 +481,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2732ae4fcec560ab559d6f5dc88',
     videoURL: 'https://www.youtube.com/watch?v=IYzlVDlE72w',
     isFavSong: false,
+    genre: musicGenresMap.rAndB,
     artistId: 9
   },
   {
@@ -444,6 +490,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2737c8977a0ad3a3a0627be9ed7',
     videoURL: 'https://www.youtube.com/watch?v=JR49dyo-y0E',
     isFavSong: false,
+    genre: musicGenresMap.rAndB,
     artistId: 9
   },
   {
@@ -452,6 +499,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273d0b8c555dc3c3fe62f8828da',
     videoURL: 'https://www.youtube.com/watch?v=1iAlioW6WAc',
     isFavSong: true,
+    genre: musicGenresMap.vallenato,
     artistId: 10
   },
   {
@@ -460,6 +508,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2731f9f0f264bc5838f14ab3a53',
     videoURL: 'https://www.youtube.com/watch?v=Tt-tuAV_9Ss',
     isFavSong: true,
+    genre: musicGenresMap.vallenato,
     artistId: 10
   },
   {
@@ -468,6 +517,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273fc9ab177e9974caadea115aa',
     videoURL: 'https://www.youtube.com/watch?v=DR6ED6lvkb4',
     isFavSong: false,
+    genre: musicGenresMap.vallenato,
     artistId: 10
   },
   {
@@ -476,6 +526,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b27308591053b40f1d20c6bda092',
     videoURL: 'https://www.youtube.com/watch?v=HyHV7jKW_Rs',
     isFavSong: false,
+    genre: musicGenresMap.vallenato,
     artistId: 10
   },
   {
@@ -484,6 +535,7 @@ export const SONGS = [
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2732af4131d078164efa68465d9',
     videoURL: 'https://www.youtube.com/watch?v=cpPffQMHNEs',
     isFavSong: false,
+    genre: musicGenresMap.vallenato,
     artistId: 10
   }
 ];
