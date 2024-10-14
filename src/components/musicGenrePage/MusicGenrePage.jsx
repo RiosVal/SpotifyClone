@@ -7,7 +7,7 @@ export function MusicGenrePage(props) {
 
     const classNames = `genre-page--header ${genre}`;
     return(
-        <AppContentContainer style={{ position: 'relative' }}>
+        <AppContentContainer>
             <div className={classNames}>
                 <img src={coverPhoto} alt="" />
                 <div className="genre-page--header-title">
