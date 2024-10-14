@@ -3,8 +3,47 @@
 
 .genre-page--header {
     height: 200px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 0 20px;
+
     img {
         width: 150px;
         height: 150px;
+        border-radius: 15px;
+    }
+
+    .genre-page--header-title {
+        width: 100vw;
+        
+        h1 {
+            font-size: 60px;
+            margin: 0;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
+
+    &.pop {
+        background: linear-gradient($pop--purple, $background-grey);
+    }
+
+    &.rock {
+        background: linear-gradient($rock--red, $background-grey);
+    }
+
+    &.regueton {
+        background: linear-gradient($regueton-pink, $background-grey);
+    }
+
+    &.rAndB {
+        background: linear-gradient($r-and-b-pink, $background-grey);
+    }
+
+    &.vallenato {
+        background: linear-gradient($vallenato-yellow, $background-grey);
     }
 }

@@ -1,18 +1,18 @@
 import React from "react";
 import { AppContentContainer } from '../appContentContainer/AppContentContainer';
-import { musicGenresMap } from "../../../utils/accountUtils";
 import './MusicGenrePage.scss';
 
 export function MusicGenrePage(props) {
-    const {genre, songs, coverPhoto} = props;
+    const {genre, pageTitle, songs, coverPhoto} = props;
 
     const classNames = `genre-page--header ${genre}`;
     return(
-        <AppContentContainer>
+        <AppContentContainer style={{ position: 'relative' }}>
             <div className={classNames}>
                 <img src={coverPhoto} alt="" />
                 <div className="genre-page--header-title">
-                    <h2>{musicGenresMap.genre}</h2>
+                    <h1>{pageTitle}</h1>
+                    <p>Género musical</p>
                 </div>
             </div>
         </AppContentContainer>
