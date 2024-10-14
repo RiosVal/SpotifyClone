@@ -588,7 +588,10 @@ export function filterByMusicGenre(genre) {
       const artist = ARTISTS.find(artist => artist.id === song.artistId);
       return {
         songName: song.songName,
-        artist: artist.artistName
+        artist: artist.artistName,
+        songPhotoURL: song.songPhotoURL,
+        videoURL: song.videoURL,
+        isFavSong: song.isFavSong
       }
     });
 }

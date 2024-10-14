@@ -1,0 +1,49 @@
+@import '../../colorVariables.scss';
+@import '../../index.scss';
+
+.song-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 0 10px;
+    border-radius: 8px;
+    margin: 10px auto;
+    a {
+        color: $font-white;
+        text-decoration: none;
+    }
+
+    .song-info {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+        p {
+            color: $font-grey;
+        }
+
+        img {
+            width: 40px;
+            height: 40px;
+            border-radius: 5px;
+        }
+
+        .title-and-artist {
+            .artist {
+                font-size: 10px;
+            }
+            p {
+                margin: 0;
+            }
+        }
+    }
+
+    button {
+        height: fit-content;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: rgba($hover-background-grey, 0.8);
+    }
+}
