@@ -572,3 +572,24 @@ export const PLAYLISTS = [
     playlistSongs: [21, 46, 47, 22, 23]
   }
 ];
+
+export function filterByMusicGenre(genre) {
+  return SONGS
+    .filter(song => song.genre === genre)
+    .map(song => {
+      const artist = ARTISTS.find(artist => artist.id === song.artistId);
+      return {
+        songName: song.songName,
+        artist: artist.artistName
+      }
+    });
+}
+
+export function filterByArtist(artistName) {
+  const artist = ARTISTS.find(artist => artist.artistName === artistName);
+  if (!artist) { return [] }
+
+  return SONGS
+    .filter(song => song.artistId === artist.id)
+    .map(song => song.songName);
+}
