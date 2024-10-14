@@ -5,7 +5,7 @@ import "./MusicGenreRedirect.scss";
 export function MusicGenreRedirect({ musicGenre, href }) {
     return(
         <div className="genre-redirect-container">
-            <Link className="redirect-link" to={href}>{musicGenre}</Link>
+            <Link to={href}>{musicGenre}</Link>
         </div>
     );
 }

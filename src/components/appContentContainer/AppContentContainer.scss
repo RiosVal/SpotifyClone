@@ -12,9 +12,11 @@
     &::-webkit-scrollbar {
         background: $background-black;
         width: 10px;
+        border-radius: 5px;
     }
 
     &::-webkit-scrollbar-thumb {
         background-color: $background-grey-lighter;
+        border-radius: 5px;
     }
 }
