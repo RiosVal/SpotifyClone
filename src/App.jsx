@@ -68,19 +68,19 @@ function App() {
               element={<ArtistsAndAlbumsPage />} />
             <Route 
               path='/music-genre/rock' 
-              element={<MusicGenrePage genre={'Rock'} songs={rockSongs.songList} coverPhoto={GENRES_PHOTOS_URL.rock} />} />
+              element={<MusicGenrePage genre={'rock'} songs={rockSongs.songList} coverPhoto={GENRES_PHOTOS_URL.rock} />} />
             <Route 
               path='/music-genre/regueton' 
-              element={<MusicGenrePage genre={'Regueton'} songs={reguetonSongs.songList} coverPhoto={reguetonSongs.coverPhotoURL} />} />
+              element={<MusicGenrePage genre={'regueton'} songs={reguetonSongs.songList} coverPhoto={reguetonSongs.coverPhotoURL} />} />
             <Route 
               path='/music-genre/r&b' 
-              element={<MusicGenrePage genre={'R&B'} songs={rAndBSongs.songList} coverPhoto={rAndBSongs.coverPhotoURL} />} />
+              element={<MusicGenrePage genre={'rAndB'} songs={rAndBSongs.songList} coverPhoto={rAndBSongs.coverPhotoURL} />} />
             <Route 
               path='/music-genre/vallenato' 
-              element={<MusicGenrePage genre={'Vallenato'} songs={vallenatoSongs.songList} coverPhoto={vallenatoSongs.coverPhotoURL} />} />
+              element={<MusicGenrePage genre={'vallenato'} songs={vallenatoSongs.songList} coverPhoto={vallenatoSongs.coverPhotoURL} />} />
             <Route 
               path='/music-genre/pop' 
-              element={<MusicGenrePage genre={'Pop'} songs={popSongs.songList} coverPhoto={popSongs.coverPhotoURL} />} />
+              element={<MusicGenrePage genre={'pop'} songs={popSongs.songList} coverPhoto={popSongs.coverPhotoURL} />} />
           </Routes>
         </div>
       </>
