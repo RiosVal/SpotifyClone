@@ -26,7 +26,7 @@ export const getAccessToken = async () => {
     }
 };
 
-const musicGenresMap = {
+ export const musicGenresMap = {
   rAndB: 'R&B',
   rock: 'Rock',
   regueton: 'Regueton',
