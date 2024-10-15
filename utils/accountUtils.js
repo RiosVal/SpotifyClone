@@ -596,6 +596,21 @@ export function filterByMusicGenre(genre) {
     });
 }
 
+export function filterByFavoriteSongs(){
+  return SONGS
+    .filter(song => song.isFavSong)
+    .map(song => {
+      const artist = ARTISTS.find(artist => artist.id === song.artistId);
+      return {
+        songName: song.songName,
+        songPhotoURL: song.songPhotoURL,
+        videoURL: song.videoURL,
+        genre: song.genre,
+        artist: artist.artistName
+      }
+    })
+}
+
 export function filterByArtist(artistName) {
   const artist = ARTISTS.find(artist => artist.artistName === artistName);
   if (!artist) { return [] }
