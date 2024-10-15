@@ -1,0 +1,17 @@
+@import '../../colorVariables.scss';
+
+.play-song-button {
+    background-color: $green-button;
+    color: $background-black;
+    width: 35px;
+    height: 35px;
+    border: none;
+    border-radius: 50%;
+
+    &:hover {
+        cursor: pointer;
+        width: 40px;
+        height: 40px;
+        background-color: $hover-green-button;
+    }
+}

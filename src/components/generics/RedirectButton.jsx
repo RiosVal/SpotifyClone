@@ -4,11 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./RedirectButton.scss";
 
 export function RedirectButton(props) {
-    const {propIcon, label, href} = props;
+    const {propIcon, label, href, playButton} = props;
     const classNames = [
         'redirect-button',
         propIcon ? 'with-icon' : '',
-        label ? 'with-label' : ''
+        label ? 'with-label' : '',
+        playButton ? 'play-button': ''
     ].join(' ').trim();
     return(
         <button className={classNames}>

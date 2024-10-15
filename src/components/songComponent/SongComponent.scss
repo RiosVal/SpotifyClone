@@ -6,9 +6,11 @@
     justify-content: space-between;
     align-items: center;
     width: 90%;
+    height: 60px;
     padding: 0 10px;
     border-radius: 8px;
     margin: 10px auto;
+
     a {
         color: $font-white;
         text-decoration: none;
@@ -36,14 +38,51 @@
                 margin: 0;
             }
         }
+
+        .play-song-button-and-index-container {
+            width: 40px;
+            height: 40px;
+        }
     }
 
-    button {
+    .play-song-button-and-index-container {
+        height: 40px;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .index {
+            display: block;
+        }
+
+        .play-button-wrapper {
+            display: none;
+        }
+    }
+
+    .song-component-star-icon {
         height: fit-content;
+        background-color: transparent;
+        border: none;
+        color: $font-white;
+
+        &:hover {
+            cursor: pointer;
+            font-size: 15px;
+        }
     }
 
     &:hover {
         cursor: pointer;
         background-color: rgba($hover-background-grey, 0.8);
+
+        .index {
+            display: none; // Oculta el índice al hacer hover
+        }
+
+        .play-button-wrapper {
+            display: block;
+        }
     }
 }

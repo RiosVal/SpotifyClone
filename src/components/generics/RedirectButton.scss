@@ -30,4 +30,9 @@
             color: $background-black;
         }
     }
+
+    &.play-button {
+        background-color: $green-button;
+        color: $background-black;
+    }
 }
