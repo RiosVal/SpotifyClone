@@ -604,3 +604,8 @@ export function filterByArtist(artistName) {
     .filter(song => song.artistId === artist.id)
     .map(song => song.songName);
 }
+
+export const convertToEmbedURL = (url) => {
+  const videoId = url.split('v=')[1]?.split('&')[0]; // Extrae el video ID
+  return `https://www.youtube.com/embed/${videoId}`;
+};

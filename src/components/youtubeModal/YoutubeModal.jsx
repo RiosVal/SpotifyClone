@@ -1,43 +1,28 @@
 import React from "react";
-import Modal from 'react-modal';
-import './YoutubeModal.scss';
-
-const customStyles = {
-    content: {
-      top: '50%',
-      left: '50%',
-      right: 'auto',
-      bottom: 'auto',
-      marginRight: '-50%',
-      transform: 'translate(-50%, -50%)',
-      width: '80%',
-      height: '80%',
-    },
-  };
-
-Modal.setAppElement('#root');
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faX } from "@fortawesome/free-solid-svg-icons";
+import { convertToEmbedURL } from "../../../utils/accountUtils";
 
 export function YoutubeModal(props) {
-    const { modalIsOpen, onRequestClose, closeModal, videoURL } = props;
-
+    const { isOpen, onClose, videoURL } = props;
+    if (!isOpen) return null;
     return(
-        <Modal
-            isOpen={modalIsOpen}
-            onRequestClose={onRequestClose}
-            style={customStyles}
-            contentLabel="Video Modal"
-        >
-            <button onClick={() => closeModal}>Cerrar</button>
-            <div>
-                <iframe
-                    width="90%"
-                    height="90%"
-                    src={videoURL}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    title="YouTube Video"
-                ></iframe>
+        <div className="modal-overlay">
+            <div className="modal-content">
+                <button className="modal-close-button" onClick={onClose}>
+                    <FontAwesomeIcon icon={faX} />
+                </button>
+                <div className="modal-content">
+                    <iframe
+                        width="100%"
+                        height="315"
+                        src={convertToEmbedURL(videoURL)}
+                        title="YouTube video player"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
+                </div>
             </div>
-        </Modal>
+        </div>
     );
 }

@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faStar } from "@fortawesome/free-regular-svg-icons";
 import { PlaySongButton } from "../playSongButton/PlaySongButton";
+import { YoutubeModal } from "../youtubeModal/YoutubeModal";
 import './SongComponent.scss';
 
 export function SongComponent({ song, index }) {
     const {songName, artist, songPhotoURL, videoURL, isFavSong} = song;
+
+    const [isModalOpen, setIsModalOpen] = useState(false);
+
+    const openModal = () => setIsModalOpen(true);
+    const closeModal = () => setIsModalOpen(false);
 
     return (
         <div className="song-container">
@@ -14,7 +20,7 @@ export function SongComponent({ song, index }) {
                 <div className="play-song-button-and-index-container">
                     <p className="index">{index + 1}</p>
                     <div className="play-button-wrapper">
-                        <PlaySongButton />
+                        <PlaySongButton openModal={openModal} />
                     </div>
                 </div>
                 <img src={songPhotoURL} alt="" />
@@ -26,6 +32,11 @@ export function SongComponent({ song, index }) {
             <button className="song-component-star-icon">
                 <FontAwesomeIcon icon={faStar} />
             </button>
+
+            <YoutubeModal
+                isOpen={isModalOpen}
+                onClose={closeModal}
+                videoURL={videoURL}/>
         </div>
     );
 }

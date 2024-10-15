@@ -5,7 +5,7 @@ import './PlaySongButton.scss';
 
 export function PlaySongButton({ openModal }) {
     return(
-        <button onClick={() => openModal} className="play-song-button">
+        <button onClick={openModal} className="play-song-button">
             <FontAwesomeIcon icon={faPlay} />
         </button>
     );
