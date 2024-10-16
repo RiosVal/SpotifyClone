@@ -46,4 +46,8 @@
     &.vallenato {
         background: linear-gradient($vallenato-yellow, $background-grey);
     }
+
+    &.favorites {
+        background: linear-gradient($favorites-color, $background-grey);
+    }
 }

@@ -11,6 +11,7 @@ export function MenuSidebar() {
             <MusicGenreRedirect href={"/music-genre/r&b"} musicGenre={"R&B"}/>
             <MusicGenreRedirect href={"/music-genre/vallenato"} musicGenre={"Vallenato"}/>
             <MusicGenreRedirect href={"/music-genre/pop"} musicGenre={"Pop"}/>
+            <MusicGenreRedirect href={"/favorites"} redirectLabel={"Favoritos"} />
         </div>
     );
 }

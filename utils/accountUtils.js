@@ -39,7 +39,8 @@ export const GENRES_PHOTOS_URL = {
   pop: 'https://i.scdn.co/image/ab67616d0000b273d48b3ca7ced155aa46324088',
   regueton: 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84de893c4d8772ed9630ba31e3',
   rAndB: 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84cda10d38cbb1fdf978c9a6ca',
-  vallenato: 'https://i.scdn.co/image/ab67706f00000002c055a8784448dd140a5682bc'
+  vallenato: 'https://i.scdn.co/image/ab67706f00000002c055a8784448dd140a5682bc',
+  favorites: 'https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84577600826d80701b3d44ed9d'
 }
 
 export const ARTISTS = [
@@ -597,18 +598,7 @@ export function filterByMusicGenre(genre) {
 }
 
 export function filterByFavoriteSongs(){
-  return SONGS
-    .filter(song => song.isFavSong)
-    .map(song => {
-      const artist = ARTISTS.find(artist => artist.id === song.artistId);
-      return {
-        songName: song.songName,
-        songPhotoURL: song.songPhotoURL,
-        videoURL: song.videoURL,
-        genre: song.genre,
-        artist: artist.artistName
-      }
-    })
+  return SONGS.filter(song => song.isFavSong);
 }
 
 export function filterByArtist(artistName) {
@@ -617,7 +607,24 @@ export function filterByArtist(artistName) {
 
   return SONGS
     .filter(song => song.artistId === artist.id)
-    .map(song => song.songName);
+    .map(song => ({
+      songName: song.songName,
+      songPhotoURL: song.songPhotoURL,
+      videoURL: song.videoURL      
+    }));
+}
+
+export function getArtists(){
+  return ARTISTS.map(artist => ({
+    id: artist.id,
+    name: artist.artistName,
+    coverPhoto: artist.photoURL,
+    songs: SONGS.filter(song => song.artistId === artist.id)
+                .map(song => ({
+                  songId: song.id,
+                  songName: song.songName
+                }))
+  }))
 }
 
 export const convertToEmbedURL = (url) => {

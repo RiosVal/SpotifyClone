@@ -7,8 +7,6 @@ export function MusicGenrePage(props) {
     const {genre, pageTitle, songs, coverPhoto} = props;
     const classNames = `genre-page--header ${genre}`;
 
-    console.log(songs);
-
     return(
         <AppContentContainer>
             <div className={classNames}>
