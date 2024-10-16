@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
+import { faStar } from "@fortawesome/free-regular-svg-icons";
 import { PlaySongButton } from "../playSongButton/PlaySongButton";
 import { YoutubeModal } from "../youtubeModal/YoutubeModal";
 import './SongComponent.scss';
