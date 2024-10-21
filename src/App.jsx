@@ -1,16 +1,34 @@
-import { BrowserRouter as Router,
-  Routes,
-  Route
-} from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import { Header } from './components/header/Header';
 import { MenuSidebar } from './components/menuSidebar/MenuSidebar';
 import { ArtistsAndAlbumsPage } from './components/artistsAndAlbumsPage/ArtistsAndAlbumsPage';
 import { MusicGenrePage } from './components/musicGenrePage/MusicGenrePage';
-import { musicGenresMap, GENRES_PHOTOS_URL, filterByMusicGenre, filterByFavoriteSongs } from '../utils/accountUtils';
+import { 
+  musicGenresMap, 
+  GENRES_PHOTOS_URL, 
+  filterByMusicGenre, 
+  filterByFavoriteSongs 
+} from '../utils/accountUtils';
 
-import './App.scss'
+import './App.scss';
 
 function App() {
+  // Estado para las canciones favoritas
+  const [favoriteSongs, setFavoriteSongs] = useState({
+    songList: [],
+    coverPhotoURL: GENRES_PHOTOS_URL.favorites
+  });
+
+  // Efecto para cargar favoritos al iniciar y cada vez que se actualizan
+  useEffect(() => {
+    const favorites = filterByFavoriteSongs();
+    setFavoriteSongs(prevState => ({
+      ...prevState,
+      songList: favorites
+    }));
+  }, []); // Ejecuta solo una vez al montar el componente
+
   const rockSongs = {
     songList: filterByMusicGenre(musicGenresMap.rock),
     coverPhotoURL: GENRES_PHOTOS_URL.rock
@@ -31,10 +49,6 @@ function App() {
     songList: filterByMusicGenre(musicGenresMap.pop),
     coverPhotoURL: GENRES_PHOTOS_URL.pop
   };
-  const favoriteSongs = {
-    songList: filterByFavoriteSongs(),
-    coverPhotoURL: GENRES_PHOTOS_URL.favorites
-  }
 
   return (
     <Router>
@@ -43,57 +57,60 @@ function App() {
         <div className='content-section'>
           <MenuSidebar />
           <Routes>
+            <Route path='/' element={<ArtistsAndAlbumsPage />} />
             <Route 
-              path='/' 
-              element={<ArtistsAndAlbumsPage />} />
+              path='/music-genre/rock' 
+              element={<MusicGenrePage
+                genre={'rock'}
+                pageTitle='Rock'
+                songs={rockSongs.songList}
+                coverPhoto={rockSongs.coverPhotoURL} />} 
+            />
             <Route 
-                path='/music-genre/rock' 
-                element={<MusicGenrePage
-                  genre={'rock'}
-                  pageTitle='Rock'
-                  songs={rockSongs.songList}
-                  coverPhoto={GENRES_PHOTOS_URL.rock} />} />
+              path='/music-genre/regueton' 
+              element={<MusicGenrePage
+                genre={'regueton'}
+                pageTitle='Regueton'
+                songs={reguetonSongs.songList}
+                coverPhoto={reguetonSongs.coverPhotoURL} />} 
+            />
             <Route 
-                path='/music-genre/regueton' 
-                element={<MusicGenrePage
-                  genre={'regueton'}
-                  pageTitle='Regueton'
-                  songs={reguetonSongs.songList}
-                  coverPhoto={reguetonSongs.coverPhotoURL} />} />
+              path='/music-genre/r&b' 
+              element={<MusicGenrePage
+                genre={'rAndB'}
+                pageTitle='R&B'
+                songs={rAndBSongs.songList}
+                coverPhoto={rAndBSongs.coverPhotoURL} />} 
+            />
             <Route 
-                path='/music-genre/r&b' 
-                element={<MusicGenrePage
-                  genre={'rAndB'}
-                  pageTitle='R&B'
-                  songs={rAndBSongs.songList}
-                  coverPhoto={rAndBSongs.coverPhotoURL} />} />
+              path='/music-genre/vallenato' 
+              element={<MusicGenrePage
+                genre={'vallenato'}
+                pageTitle='Vallenato'
+                songs={vallenatoSongs.songList}
+                coverPhoto={vallenatoSongs.coverPhotoURL} />} 
+            />
             <Route 
-                path='/music-genre/vallenato' 
-                element={<MusicGenrePage
-                  genre={'vallenato'}
-                  pageTitle='Vallenato'
-                  songs={vallenatoSongs.songList}
-                  coverPhoto={vallenatoSongs.coverPhotoURL} />} />
+              path='/music-genre/pop' 
+              element={<MusicGenrePage
+                genre={'pop'}
+                pageTitle='Pop'
+                songs={popSongs.songList}
+                coverPhoto={popSongs.coverPhotoURL} />} 
+            />
             <Route 
-                path='/music-genre/pop' 
-                element={<MusicGenrePage
-                  genre={'pop'}
-                  pageTitle='Pop'
-                  songs={popSongs.songList}
-                  coverPhoto={popSongs.coverPhotoURL} />} />
-            <Route 
-                path='/favorites' 
-                element={<MusicGenrePage
-                  genre={'favorites'}
-                  pageTitle='Favoritos'
-                  songs={favoriteSongs.songList}
-                  coverPhoto={favoriteSongs.coverPhotoURL} />} />
-            
+              path='/favorites' 
+              element={<MusicGenrePage
+                genre={'favorites'}
+                pageTitle='Favoritos'
+                songs={favoriteSongs.songList}
+                coverPhoto={favoriteSongs.coverPhotoURL} />} 
+            />
           </Routes>
         </div>
       </>
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;

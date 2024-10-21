@@ -111,7 +111,7 @@ export const SONGS = [
     songName: 'SE ME OLVIDA',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273edd9fbb8df345ace64a558d7',
     videoURL: 'https://www.youtube.com/watch?v=ROgcM9-N9jM',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.regueton,
     artistId: 1
   },
@@ -120,7 +120,7 @@ export const SONGS = [
     songName: 'PERRO NEGRO',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d00001e027cc7b0d6a82846cd8b158f99',
     videoURL: 'https://www.youtube.com/watch?v=a6tgD_CsYTQ',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.regueton,
     artistId: 1
   },
@@ -129,7 +129,7 @@ export const SONGS = [
     songName: 'SORRY 4 THAT MUCH',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273746cdeef8d4a4110f1b5af29',
     videoURL: 'https://www.youtube.com/watch?v=Q2ftMmazZCU',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.regueton,
     artistId: 1
   },
@@ -147,7 +147,7 @@ export const SONGS = [
     songName: 'Bad Romance',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273aeb64471596b00f380975ceb',
     videoURL: 'https://www.youtube.com/watch?v=qrO4YZeyl0I',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.pop,
     artistId: 2
   },
@@ -156,7 +156,7 @@ export const SONGS = [
     songName: 'Judas',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2739ce7475919b19845b22e5208',
     videoURL: 'https://www.youtube.com/watch?v=wagn8Wrmzuc',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.pop,
     artistId: 2
   },
@@ -192,7 +192,7 @@ export const SONGS = [
     songName: `I Don't Wanna Miss a Thing`,
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273f039d2a6afcfab0827bb9bc0',
     videoURL: 'https://www.youtube.com/watch?v=JkK8g6FMEXE',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.rock,
     artistId: 3
   },
@@ -201,7 +201,7 @@ export const SONGS = [
     songName: 'Dream On',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273b11078ee23dcd99e085ac33e',
     videoURL: 'https://www.youtube.com/watch?v=89dGC8de0CA',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.rock,
     artistId: 3
   },
@@ -228,7 +228,7 @@ export const SONGS = [
     songName: 'Rag Doll',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273a8a965df6a845b265ee19106',
     videoURL: 'https://www.youtube.com/watch?v=mrEC8xGc3ZM',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.rock,
     artistId: 3
   },
@@ -246,7 +246,7 @@ export const SONGS = [
     songName: 'No One',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b27373b720e9f078763d33df52e8',
     videoURL: 'https://www.youtube.com/watch?v=rywUS-ohqeE',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.rAndB,
     artistId: 4
   },
@@ -264,7 +264,7 @@ export const SONGS = [
     songName: 'Superwoman',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273c7e7390eb92b5c540ca3d06e',
     videoURL: 'https://www.youtube.com/watch?v=-AphKUK8twg',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.rAndB,
     artistId: 4
   },
@@ -273,7 +273,7 @@ export const SONGS = [
     songName: `Fallin'`,
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2736d684b553a40e4a11e1db96d',
     videoURL: 'https://www.youtube.com/watch?v=Urdlvw0SSEc',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.rAndB,
     artistId: 4
   },
@@ -282,7 +282,7 @@ export const SONGS = [
     songName: 'Por un Beso de Tu Boca',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2735c37183a6df48c0b426f966a',
     videoURL: 'https://www.youtube.com/watch?v=HL_NrQsUSsA',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.vallenato,
     artistId: 5
   },
@@ -291,7 +291,7 @@ export const SONGS = [
     songName: 'Ya No Me Duele Mas',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273408b5314c4bcf53dfc51e6a8',
     videoURL: 'https://www.youtube.com/watch?v=BIbonPyTuHQ',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.vallenato,
     artistId: 5
   },
@@ -300,7 +300,7 @@ export const SONGS = [
     songName: 'Materialista',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273ceee4f46d31f91dce77c6f48',
     videoURL: 'https://www.youtube.com/watch?v=94bCNMghYrg',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.vallenato,
     artistId: 5
   },
@@ -327,7 +327,7 @@ export const SONGS = [
     songName: 'Billie Jean',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2739eb690cb054df293fe7711b8',
     videoURL: 'https://www.youtube.com/watch?v=Zi_XLOBDo_Y',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.pop,
     artistId: 6
   },
@@ -345,7 +345,7 @@ export const SONGS = [
     songName: 'Earth Song',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273d0593178c6c2594693ee34b7',
     videoURL: 'https://www.youtube.com/watch?v=XAi3VTSdTxU',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.pop,
     artistId: 6
   },
@@ -354,7 +354,7 @@ export const SONGS = [
     songName: 'Remember the Time',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2733b9f8b18cc685e1502128aa8',
     videoURL: 'https://www.youtube.com/watch?v=LeiFF0gvqcc',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.pop,
     artistId: 6
   },
@@ -363,7 +363,7 @@ export const SONGS = [
     songName: 'Smooth Criminal',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2731bb21d27effb96a1d0fe8d6d',
     videoURL: 'https://www.youtube.com/watch?v=h_D3VFfhvs4',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.pop,
     artistId: 6
   },
@@ -390,7 +390,7 @@ export const SONGS = [
     songName: 'QUE CHIMBA DE VIDA',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2738bf08f626df56fffc04b94c6',
     videoURL: 'https://www.youtube.com/watch?v=mL3iLaYbZqk',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.regueton,
     artistId: 7
   },
@@ -408,7 +408,7 @@ export const SONGS = [
     songName: 'PROVENZA',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273e70c454b8989f09d1e11ea92',
     videoURL: 'https://www.youtube.com/watch?v=ca48oMV59LU',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.regueton,
     artistId: 7
   },
@@ -417,7 +417,7 @@ export const SONGS = [
     songName: 'Nothing Else Matters',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273cf84c5b276431b473e924802',
     videoURL: 'https://www.youtube.com/watch?v=tAGnKpE4NCI',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.rock,
     artistId: 8
   },
@@ -435,7 +435,7 @@ export const SONGS = [
     songName: 'One',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2737c05e69390ab7c628a83cee7',
     videoURL: 'https://www.youtube.com/watch?v=WM8bTdBs-cw',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.rock,
     artistId: 8
   },
@@ -453,7 +453,7 @@ export const SONGS = [
     songName: 'The Unforgiven',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273af07dc851962508661bbcfce',
     videoURL: 'https://www.youtube.com/watch?v=domjqjQ_WRI',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.rock,
     artistId: 8
   },
@@ -462,7 +462,7 @@ export const SONGS = [
     songName: 'I Will Always Love You',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273456c0b5d0316a80dc600802e',
     videoURL: 'https://www.youtube.com/watch?v=3JWTaaS7LdU',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.rAndB,
     artistId: 9
   },
@@ -471,7 +471,7 @@ export const SONGS = [
     songName: 'I Have Nothing',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273610c796bc53cec9b9932a269',
     videoURL: 'https://www.youtube.com/watch?v=FxYw0XPEoKE',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.rAndB,
     artistId: 9
   },
@@ -480,7 +480,7 @@ export const SONGS = [
     songName: 'I Wanna Dance With Somebody',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d00001e02cc57e9b00b87dd0f6e868347',
     videoURL: 'https://www.youtube.com/watch?v=eH3giaIzONA',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.rAndB,
     artistId: 9
   },
@@ -507,7 +507,7 @@ export const SONGS = [
     songName: 'Olvídala',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b273d0b8c555dc3c3fe62f8828da',
     videoURL: 'https://www.youtube.com/watch?v=1iAlioW6WAc',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.vallenato,
     artistId: 10
   },
@@ -516,7 +516,7 @@ export const SONGS = [
     songName: 'Si Tu Amor No Vuelve',
     songPhotoURL: 'https://i.scdn.co/image/ab67616d0000b2731f9f0f264bc5838f14ab3a53',
     videoURL: 'https://www.youtube.com/watch?v=Tt-tuAV_9Ss',
-    isFavSong: true,
+    isFavSong: false,
     genre: musicGenresMap.vallenato,
     artistId: 10
   },
@@ -584,22 +584,28 @@ export const PLAYLISTS = [
 
 export function filterByMusicGenre(genre) {
   return SONGS
-    .filter(song => song.genre === genre)
-    .map(song => {
-      const artist = ARTISTS.find(artist => artist.id === song.artistId);
-      return {
-        songName: song.songName,
-        artist: artist.artistName,
-        songPhotoURL: song.songPhotoURL,
-        videoURL: song.videoURL,
-        isFavSong: song.isFavSong
-      }
-    });
+      .filter(song => song.genre === genre)
+      .map(song => {
+          const artist = ARTISTS.find(artist => artist.id === song.artistId);
+          return {
+              ...song,
+              artist: artist.artistName
+          };
+      });
 }
 
-export function filterByFavoriteSongs(){
-  return SONGS.filter(song => song.isFavSong);
+export function filterByFavoriteSongs() {
+    return JSON.parse(localStorage.getItem('favorites')) || [];
 }
+
+
+export function updateSongFavoriteStatus(songId, isFav) {
+  const songIndex = SONGS.findIndex(song => song.id === songId);
+  if (songIndex > -1) {
+      SONGS[songIndex].isFavSong = isFav;
+  }
+}
+
 
 export function filterByArtist(artistName) {
   const artist = ARTISTS.find(artist => artist.artistName === artistName);
