@@ -8,7 +8,9 @@ import {
   musicGenresMap, 
   GENRES_PHOTOS_URL, 
   filterByMusicGenre, 
-  filterByFavoriteSongs 
+  filterByFavoriteSongs,
+  getArtistInfo,
+  ARTISTS_NAMES,
 } from '../utils/accountUtils';
 
 import './App.scss';
@@ -49,6 +51,7 @@ function App() {
     songList: filterByMusicGenre(musicGenresMap.pop),
     coverPhotoURL: GENRES_PHOTOS_URL.pop
   };
+  console.log(ARTISTS_NAMES)
 
   return (
     <Router>
@@ -106,6 +109,24 @@ function App() {
                 songs={favoriteSongs.songList}
                 coverPhoto={favoriteSongs.coverPhotoURL} />} 
             />
+            {/* <Route path='/artist/Lady Gaga' element={<div>Lady Gaga</div>}/> */}
+            {
+              ARTISTS_NAMES.map(artist => {
+                const artistInfo = getArtistInfo(artist);
+                console.log(artistInfo);
+                const artistPath='/artist/' + artist;
+                return(
+                  <Route
+                  path={artistPath}
+                  element={<MusicGenrePage
+                    genre={'artist'}
+                    pageTitle={artist}
+                    songs={artistInfo.songs}
+                    coverPhoto={artistInfo.photoURL} />}
+                />
+                );
+              })
+            }
           </Routes>
         </div>
       </>

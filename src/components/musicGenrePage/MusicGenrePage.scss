@@ -50,4 +50,8 @@
     &.favorites {
         background: linear-gradient($favorites-color, $background-grey);
     }
+
+    &.artist {
+        background: linear-gradient($green-button, $background-grey);
+    }
 }

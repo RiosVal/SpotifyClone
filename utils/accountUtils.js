@@ -633,6 +633,35 @@ export function getArtists(){
   }))
 }
 
+export function getArtistInfo(artistName) {
+  const artist = ARTISTS.find(artist => artist.artistName === artistName);
+  if (!artist) {
+    return null; // Si no encuentra el artista, retorna null
+  }
+
+  const songsByArtist = SONGS.filter(song => song.artistId === artist.id).map(song => ({
+    id: song.id,
+    songName: song.songName,
+    songPhotoURL: song.songPhotoURL,
+    videoURL: song.videoURL,
+    isFavSong: song.isFavSong,
+    genre: song.genre
+  }));
+
+  return {
+    id: artist.id,
+    artistName: artist.artistName,
+    photoURL: artist.photoURL,
+    songs: songsByArtist
+  };
+}
+
+function getArtistNames() {
+  return ARTISTS.map(artist => artist.artistName);
+}
+
+export const ARTISTS_NAMES = getArtistNames();
+
 export const convertToEmbedURL = (url) => {
   const videoId = url.split('v=')[1]?.split('&')[0]; // Extrae el video ID
   return `https://www.youtube.com/embed/${videoId}`;
