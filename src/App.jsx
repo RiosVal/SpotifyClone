@@ -110,6 +110,9 @@ function App() {
                 coverPhoto={favoriteSongs.coverPhotoURL} />} 
             />
             {/* <Route path='/artist/Lady Gaga' element={<div>Lady Gaga</div>}/> */}
+
+            <Route path="/" element={<ArtistsAndAlbumsPage />} />
+            <Route path="/artist/:artistName" element={<MusicGenrePage />} />
             {
               ARTISTS_NAMES.map(artist => {
                 const artistInfo = getArtistInfo(artist);
