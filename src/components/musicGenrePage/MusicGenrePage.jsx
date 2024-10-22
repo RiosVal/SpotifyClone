@@ -1,13 +1,27 @@
-import React from "react";
-import { AppContentContainer } from '../appContentContainer/AppContentContainer';
+import React, { useState } from "react";
+import { AppContentContainer } from "../appContentContainer/AppContentContainer";
 import { SongComponent } from "../songComponent/SongComponent";
-import './MusicGenrePage.scss';
+import { YoutubeModal } from "../youtubeModal/YoutubeModal"; // Importar el modal
+import "./MusicGenrePage.scss";
 
 export function MusicGenrePage(props) {
-    const {genre, pageTitle, songs, coverPhoto} = props;
+    const { genre, pageTitle, songs, coverPhoto } = props;
     const classNames = `genre-page--header ${genre}`;
 
-    return(
+    const [isModalOpen, setIsModalOpen] = useState(false);
+    const [currentVideoURL, setCurrentVideoURL] = useState("");
+
+    const openModal = (videoURL) => {
+        setCurrentVideoURL(videoURL);
+        setIsModalOpen(true);
+    };
+
+    const closeModal = () => {
+        setIsModalOpen(false);
+        setCurrentVideoURL("");
+    };
+
+    return (
         <AppContentContainer>
             <div className={classNames}>
                 <img src={coverPhoto} alt="" />
@@ -17,11 +31,24 @@ export function MusicGenrePage(props) {
                 </div>
             </div>
 
+            {/* Contenedor para la lista de canciones y modal */}
             <div className="genre-page--songlist-container">
                 {songs.map((song, index) => (
-                    <SongComponent song={song} index={index}/>
+                    <SongComponent
+                        key={index}
+                        song={song}
+                        index={index}
+                        openModal={openModal} // Pasar la función de apertura del modal
+                    />
                 ))}
             </div>
+
+            {/* Modal de YouTube */}
+            <YoutubeModal
+                isOpen={isModalOpen}
+                onClose={closeModal}
+                videoURL={currentVideoURL}
+            />
         </AppContentContainer>
     );
 }
